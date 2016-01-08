@@ -1,0 +1,48 @@
+body {
+	background-color: teal;
+}
+
+article {
+	padding: 100px;
+	margin: 100px
+}
+header {
+	width: 100%;
+	margin: 100px;
+	text-align: center;
+}
+
+.photo {
+	padding:44px;
+    float:left;
+    margin:60px;
+}
+
+.sum{
+    padding:44px;
+    float:right;
+    margin:60px;	
+}
+a:link {
+  color: gray;
+}
+
+a:visited {
+` color: orange;
+}
+
+a:hover {
+  color: #999999;
+}
+
+footer {
+	width: 100%;
+	margin: 100px;
+	text-align: center;
+}
+
+.detail {
+	padding:94px;
+    float:center;
+    margin:30px;
+}

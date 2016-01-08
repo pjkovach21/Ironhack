@@ -1,0 +1,62 @@
+p{
+	background-color: grey;
+	padding: 12px 7px 2px;
+	margin: 12px 7px 2px;
+}
+body {
+	background-color: white;
+	font-family: "Baskerville";
+	width: 400px;
+	margin: auto;
+	box-shadow: 10px 5px 5px #888888;
+}
+
+.niceParagraph {
+  background-color: yellow;
+  font-family: "Baskerville";
+  padding: 10px 5px;
+  margin: 10px 5px;
+
+}
+
+p:hover{
+	color: green;
+}
+
+#finalParagraph {
+  background-color: orange;
+  font-family: "Baskerville";
+}
+
+footer p {
+  background-color: #444444;
+  padding: 50px 10px;
+  border-top: 5px solid white;
+  color: white;
+  font-size: 10px;
+  font-style: italic;
+  width: 100%;
+  margin: 100px 
+}
+header {
+	background-color: blue; rgb(2,55,192)
+}
+
+h3 {
+	font-size: 69px
+}
+a:link {
+  color: #FFFFFF;
+}
+
+a:visited {
+` color: #CCCCCC;
+}
+
+a:hover {
+  color: #999999;
+}
+
+#image {
+	float: left;
+}

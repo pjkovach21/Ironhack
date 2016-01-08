@@ -1,0 +1,534 @@
+Last login: Sat Jan  2 17:25:29 on ttys000
+Peters-MacBook-Pro:~ peterkovach$ ls
+Applications		First-Repo-Preactice	MyProject
+Desktop			Library			Pictures
+Documents		Movies			Public
+Downloads		Music
+Peters-MacBook-Pro:~ peterkovach$ cd Documents/
+Peters-MacBook-Pro:Documents peterkovach$ ls
+Adwords		Ironhack	Miami		MyProject
+Peters-MacBook-Pro:Documents peterkovach$ mv MyProject Ironhack
+Peters-MacBook-Pro:Documents peterkovach$ ls
+Adwords		Ironhack	Miami
+Peters-MacBook-Pro:Documents peterkovach$ Ironhack
+-bash: Ironhack: command not found
+Peters-MacBook-Pro:Documents peterkovach$ cd Ironhack/
+Peters-MacBook-Pro:Ironhack peterkovach$ ls
+Exercises	Icecream	MyProject
+Peters-MacBook-Pro:Ironhack peterkovach$ rm Icecream/
+rm: Icecream/: is a directory
+Peters-MacBook-Pro:Ironhack peterkovach$ rm Icecream/ -r
+rm: Icecream/: is a directory
+rm: -r: No such file or directory
+Peters-MacBook-Pro:Ironhack peterkovach$ ls
+Exercises	Icecream	MyProject
+Peters-MacBook-Pro:Ironhack peterkovach$ rm Icecream
+rm: Icecream: is a directory
+Peters-MacBook-Pro:Ironhack peterkovach$ rm Icecream -r
+rm: Icecream: is a directory
+rm: -r: No such file or directory
+Peters-MacBook-Pro:Ironhack peterkovach$ ls
+Exercises	Icecream	MyProject
+Peters-MacBook-Pro:Ironhack peterkovach$ rm Icecream/ -R
+rm: Icecream/: is a directory
+rm: -R: No such file or directory
+Peters-MacBook-Pro:Ironhack peterkovach$ ls
+Exercises	Icecream	MyProject
+Peters-MacBook-Pro:Ironhack peterkovach$ cd Icecream/
+Peters-MacBook-Pro:Icecream peterkovach$ ls
+Peters-MacBook-Pro:Icecream peterkovach$ cd Documents
+-bash: cd: Documents: No such file or directory
+Peters-MacBook-Pro:Icecream peterkovach$ cd ../../
+Peters-MacBook-Pro:Documents peterkovach$ ls
+Adwords		Ironhack	Miami
+Peters-MacBook-Pro:Documents peterkovach$ cd ../../../
+Peters-MacBook-Pro:/ peterkovach$ cd ../../../
+Peters-MacBook-Pro:/ peterkovach$ ls
+Applications			etc
+Library				home
+Network				installer.failurerequests
+System				net
+Users				private
+Volumes				sbin
+bin				tmp
+cores				usr
+dev				var
+Peters-MacBook-Pro:/ peterkovach$ pwd
+/
+Peters-MacBook-Pro:/ peterkovach$ cd ..
+Peters-MacBook-Pro:/ peterkovach$ ls
+Applications			etc
+Library				home
+Network				installer.failurerequests
+System				net
+Users				private
+Volumes				sbin
+bin				tmp
+cores				usr
+dev				var
+Peters-MacBook-Pro:/ peterkovach$ cd Library/
+Peters-MacBook-Pro:Library peterkovach$ ls
+Application Support	Image Capture		QuickTime
+Audio			Input Methods		Receipts
+Caches			Internet Plug-Ins	Ruby
+ColorPickers		Java			Sandbox
+ColorSync		Keyboard Layouts	Screen Savers
+Components		Keychains		ScriptingAdditions
+Compositions		LaunchAgents		Scripts
+Contextual Menu Items	LaunchDaemons		Security
+CoreMediaIO		Logs			Speech
+Desktop Pictures	Messages		Spotlight
+Developer		Modem Scripts		StartupItems
+Dictionaries		OpenDirectory		SystemProfiler
+DirectoryServices	PDF Services		Updates
+Documentation		Perl			User Pictures
+Extensions		PreferencePanes		Video
+Filesystems		Preferences		WebServer
+Fonts			Printers		Widgets
+Frameworks		Python			iTunes
+Graphics		QuickLook
+Peters-MacBook-Pro:Library peterkovach$ cd
+Peters-MacBook-Pro:~ peterkovach$ ls
+Applications		First-Repo-Preactice	MyProject
+Desktop			Library			Pictures
+Documents		Movies			Public
+Downloads		Music
+Peters-MacBook-Pro:~ peterkovach$ cd First-Repo-Preactice/ Documents/
+Peters-MacBook-Pro:First-Repo-Preactice peterkovach$ ls
+Peters-MacBook-Pro:First-Repo-Preactice peterkovach$ ls
+Peters-MacBook-Pro:First-Repo-Preactice peterkovach$ cd../../
+-bash: cd../../: No such file or directory
+Peters-MacBook-Pro:First-Repo-Preactice peterkovach$ ls
+Peters-MacBook-Pro:First-Repo-Preactice peterkovach$ cd
+Peters-MacBook-Pro:~ peterkovach$ ls
+Applications		First-Repo-Preactice	MyProject
+Desktop			Library			Pictures
+Documents		Movies			Public
+Downloads		Music
+Peters-MacBook-Pro:~ peterkovach$ mv First-Repo-Preactice/ Documents/
+Peters-MacBook-Pro:~ peterkovach$ ls
+Applications	Documents	Library		Music		Pictures
+Desktop		Downloads	Movies		MyProject	Public
+Peters-MacBook-Pro:~ peterkovach$ cd Documents/
+Peters-MacBook-Pro:Documents peterkovach$ ls
+Adwords			Ironhack
+First-Repo-Preactice	Miami
+Peters-MacBook-Pro:Documents peterkovach$ mv First-Repo-Preactice/ Ironhack/
+Peters-MacBook-Pro:Documents peterkovach$ ls
+Adwords		Ironhack	Miami
+Peters-MacBook-Pro:Documents peterkovach$ cd Ironhack
+Peters-MacBook-Pro:Ironhack peterkovach$ ls
+Exercises		Icecream
+First-Repo-Preactice	MyProject
+Peters-MacBook-Pro:Ironhack peterkovach$ rm First-Repo-Preactice/
+rm: First-Repo-Preactice/: is a directory
+Peters-MacBook-Pro:Ironhack peterkovach$ ls
+Exercises		Icecream
+First-Repo-Preactice	MyProject
+Peters-MacBook-Pro:Ironhack peterkovach$ rm First-Repo-Preactice/ -r
+rm: First-Repo-Preactice/: is a directory
+rm: -r: No such file or directory
+Peters-MacBook-Pro:Ironhack peterkovach$ ls
+Exercises		Icecream
+First-Repo-Preactice	MyProject
+Peters-MacBook-Pro:Ironhack peterkovach$ rm First-Repo-Preactice/ -R
+rm: First-Repo-Preactice/: is a directory
+rm: -R: No such file or directory
+Peters-MacBook-Pro:Ironhack peterkovach$ mkdir Apples
+Peters-MacBook-Pro:Ironhack peterkovach$ ls
+Apples			First-Repo-Preactice	MyProject
+Exercises		Icecream
+Peters-MacBook-Pro:Ironhack peterkovach$ git init
+Initialized empty Git repository in /Users/peterkovach/Documents/Ironhack/.git/
+Peters-MacBook-Pro:Ironhack peterkovach$ ls
+Apples			First-Repo-Preactice	MyProject
+Exercises		Icecream
+Peters-MacBook-Pro:Ironhack peterkovach$ cd Apples/
+Peters-MacBook-Pro:Apples peterkovach$ get init
+-bash: get: command not found
+Peters-MacBook-Pro:Apples peterkovach$ git init
+Initialized empty Git repository in /Users/peterkovach/Documents/Ironhack/Apples/.git/
+Peters-MacBook-Pro:Apples peterkovach$ git status
+On branch master
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+Peters-MacBook-Pro:Apples peterkovach$ touch apples
+Peters-MacBook-Pro:Apples peterkovach$ ls
+apples
+Peters-MacBook-Pro:Apples peterkovach$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	apples
+
+nothing added to commit but untracked files present (use "git add" to track)
+Peters-MacBook-Pro:Apples peterkovach$ git add apples
+Peters-MacBook-Pro:Apples peterkovach$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   apples
+
+Peters-MacBook-Pro:Apples peterkovach$ git commit -m "apples because apples"
+[master (root-commit) 75c2fb9] apples because apples
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 apples
+Peters-MacBook-Pro:Apples peterkovach$ git log
+commit 75c2fb9d5150ec32141495242be874bf56045220
+Author: Peter Kovach <pjkovach21@gmail.com>
+Date:   Sun Jan 3 00:05:02 2016 -0500
+
+    apples because apples
+Peters-MacBook-Pro:Apples peterkovach$ git log --online
+fatal: unrecognized argument: --online
+Peters-MacBook-Pro:Apples peterkovach$ git log --oneline
+75c2fb9 apples because apples
+Peters-MacBook-Pro:Apples peterkovach$ git checkout 75c2fb9
+Note: checking out '75c2fb9'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at 75c2fb9... apples because apples
+Peters-MacBook-Pro:Apples peterkovach$ cd
+Peters-MacBook-Pro:~ peterkovach$ ls
+Applications	Documents	Library		Music		Pictures
+Desktop		Downloads	Movies		MyProject	Public
+Peters-MacBook-Pro:~ peterkovach$ cd Documents/
+Peters-MacBook-Pro:Documents peterkovach$ cd Ironhack/
+Peters-MacBook-Pro:Ironhack peterkovach$ ls -l
+total 0
+drwxr-xr-x  4 peterkovach  staff  136 Jan  3 00:00 Apples
+drwxr-xr-x  5 peterkovach  staff  170 Dec 30 15:20 Exercises
+drwxr-xr-x  3 peterkovach  staff  102 Jan  2 17:30 First-Repo-Preactice
+drwxr-xr-x  3 peterkovach  staff  102 Jan  2 17:55 Icecream
+drwxr-xr-x@ 4 peterkovach  staff  136 Jan  2 17:55 MyProject
+Peters-MacBook-Pro:Ironhack peterkovach$ mkdir git-practice
+Peters-MacBook-Pro:Ironhack peterkovach$ cd git-practice/
+Peters-MacBook-Pro:git-practice peterkovach$ git init
+Initialized empty Git repository in /Users/peterkovach/Documents/Ironhack/git-practice/.git/
+Peters-MacBook-Pro:git-practice peterkovach$ touch three_doors.txt
+Peters-MacBook-Pro:git-practice peterkovach$ ls
+three_doors.txt
+Peters-MacBook-Pro:git-practice peterkovach$ echo "You are in a room with three doors." >> three_doors.txt
+Peters-MacBook-Pro:git-practice peterkovach$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	three_doors.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+Peters-MacBook-Pro:git-practice peterkovach$ git add three_doors.txt
+Peters-MacBook-Pro:git-practice peterkovach$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   three_doors.txt
+
+Peters-MacBook-Pro:git-practice peterkovach$ git commit -m "first commit"
+[master (root-commit) f78ab98] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 three_doors.txt
+Peters-MacBook-Pro:git-practice peterkovach$ echo >> "which door will you go through?" >> three_doors.txt
+Peters-MacBook-Pro:git-practice peterkovach$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   three_doors.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	which door will you go through?
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Peters-MacBook-Pro:git-practice peterkovach$ git add three_doors.txt
+Peters-MacBook-Pro:git-practice peterkovach$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   three_doors.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	which door will you go through?
+
+Peters-MacBook-Pro:git-practice peterkovach$ open three_doors.txt
+Peters-MacBook-Pro:git-practice peterkovach$ echo "which door will you go through" >> three_doors.txt
+Peters-MacBook-Pro:git-practice peterkovach$ open three_doors.txt
+Peters-MacBook-Pro:git-practice peterkovach$ git add three_doors.txt
+Peters-MacBook-Pro:git-practice peterkovach$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   three_doors.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	which door will you go through?
+
+Peters-MacBook-Pro:git-practice peterkovach$ open three_doors.txt
+Peters-MacBook-Pro:git-practice peterkovach$ commit three_doors.txt -m "I add a second line to choose a door."
+-bash: commit: command not found
+Peters-MacBook-Pro:git-practice peterkovach$ commit three_doors.txt -m "I add a second line to choose a door."
+-bash: commit: command not found
+Peters-MacBook-Pro:git-practice peterkovach$ git commit three_doors.txt -m "I added a second line so they know to choose a door."
+[master b9a6d4f] I added a second line so they know to choose a door.
+ 1 file changed, 2 insertions(+)
+Peters-MacBook-Pro:git-practice peterkovach$ git log
+commit b9a6d4f2e0366fa7a924eea9edcc432e1295529e
+Author: Peter Kovach <pjkovach21@gmail.com>
+Date:   Sun Jan 3 00:36:55 2016 -0500
+
+    I added a second line so they know to choose a door.
+
+commit f78ab984f8501366737bc80875ec14d0d25213e4
+Author: Peter Kovach <pjkovach21@gmail.com>
+Date:   Sun Jan 3 00:27:03 2016 -0500
+
+    first commit
+Peters-MacBook-Pro:git-practice peterkovach$ echo "I pick door three" >> three_doors.txt
+Peters-MacBook-Pro:git-practice peterkovach$ git add three_doors.txt
+Peters-MacBook-Pro:git-practice peterkovach$ git commit three_doors.txt -m "i picked door three"
+[master 8b0f859] i picked door three
+ 1 file changed, 1 insertion(+)
+Peters-MacBook-Pro:git-practice peterkovach$ git log
+commit 8b0f85940e9dea9561af29080da4726d8c80210a
+Author: Peter Kovach <pjkovach21@gmail.com>
+Date:   Sun Jan 3 00:44:49 2016 -0500
+
+    i picked door three
+
+commit b9a6d4f2e0366fa7a924eea9edcc432e1295529e
+Author: Peter Kovach <pjkovach21@gmail.com>
+Date:   Sun Jan 3 00:36:55 2016 -0500
+
+    I added a second line so they know to choose a door.
+
+commit f78ab984f8501366737bc80875ec14d0d25213e4
+Author: Peter Kovach <pjkovach21@gmail.com>
+Date:   Sun Jan 3 00:27:03 2016 -0500
+
+    first commit
+Peters-MacBook-Pro:git-practice peterkovach$ git dif
+git: 'dif' is not a git command. See 'git --help'.
+
+Did you mean one of these?
+	diff
+	config
+	difftool
+	init
+Peters-MacBook-Pro:git-practice peterkovach$ git diff
+Peters-MacBook-Pro:git-practice peterkovach$ git diff three_doors.txt
+Peters-MacBook-Pro:git-practice peterkovach$ open three_doors.txt
+Peters-MacBook-Pro:git-practice peterkovach$ git diff
+Peters-MacBook-Pro:git-practice peterkovach$ git --help
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Find by binary search the change that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Forward-port local commits to the updated upstream head
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+Peters-MacBook-Pro:git-practice peterkovach$ git help diff
+Peters-MacBook-Pro:git-practice peterkovach$ git diff three_doors.txt 
+Peters-MacBook-Pro:git-practice peterkovach$ touch first_choice.txt
+Peters-MacBook-Pro:git-practice peterkovach$ echo "you won a brand new car" >> first_choice.txt
+Peters-MacBook-Pro:git-practice peterkovach$ open first_choice.txt 
+Peters-MacBook-Pro:git-practice peterkovach$ git add first_choice.txt 
+Peters-MacBook-Pro:git-practice peterkovach$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   first_choice.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	which door will you go through?
+
+Peters-MacBook-Pro:git-practice peterkovach$ git commit first_choice.txt -m "output of first choice"
+[master 1e56891] output of first choice
+ 1 file changed, 1 insertion(+)
+ create mode 100644 first_choice.txt
+Peters-MacBook-Pro:git-practice peterkovach$ touch second_choice.txt
+Peters-MacBook-Pro:git-practice peterkovach$ echo "you win a dog" >> second_choice.txt 
+Peters-MacBook-Pro:git-practice peterkovach$ git add second_choice.txt 
+Peters-MacBook-Pro:git-practice peterkovach$ git commit second_choice.txt -m "this is the reult of the second choice"
+[master 58eca41] this is the reult of the second choice
+ 1 file changed, 1 insertion(+)
+ create mode 100644 second_choice.txt
+Peters-MacBook-Pro:git-practice peterkovach$ echo "My second choice is door 2" >> three_doors.txt
+Peters-MacBook-Pro:git-practice peterkovach$ git add three_doors.txt
+Peters-MacBook-Pro:git-practice peterkovach$ git commit three_doors.txt -m "this is the second choice"
+[master 82f7ebe] this is the second choice
+ 1 file changed, 1 insertion(+)
+Peters-MacBook-Pro:git-practice peterkovach$ git log
+commit 82f7ebee9d67aa5b4b97db4178e0108607384bfc
+Author: Peter Kovach <pjkovach21@gmail.com>
+Date:   Sun Jan 3 01:01:35 2016 -0500
+
+    this is the second choice
+
+commit 58eca41b496b4ed16f7f41880c637f3161b81c6d
+Author: Peter Kovach <pjkovach21@gmail.com>
+Date:   Sun Jan 3 01:00:11 2016 -0500
+
+    this is the reult of the second choice
+
+commit 1e56891c64e424ce764fa362a12ac30c35391562
+Author: Peter Kovach <pjkovach21@gmail.com>
+Date:   Sun Jan 3 00:53:36 2016 -0500
+
+    output of first choice
+
+commit 8b0f85940e9dea9561af29080da4726d8c80210a
+Author: Peter Kovach <pjkovach21@gmail.com>
+Date:   Sun Jan 3 00:44:49 2016 -0500
+
+    i picked door three
+
+Peters-MacBook-Pro:git-practice peterkovach$ git diff
+Peters-MacBook-Pro:git-practice peterkovach$ git checkout -b new branch
+fatal: Cannot update paths and switch to branch 'new' at the same time.
+Did you intend to checkout 'branch' which can not be resolved as commit?
+Peters-MacBook-Pro:git-practice peterkovach$ yes
+
+Last login: Sat Jan  2 20:23:04 on ttys000
+Peters-MacBook-Pro:~ peterkovach$ ls
+Applications  Documents Library   Music   Pictures
+Desktop   Downloads Movies    MyProject Public
+Peters-MacBook-Pro:~ peterkovach$ cd Documents/
+Peters-MacBook-Pro:Documents peterkovach$ ls
+Adwords   Ironhack  Miami
+Peters-MacBook-Pro:Documents peterkovach$ cd Ironhack/
+Peters-MacBook-Pro:Ironhack peterkovach$ ls
+Apples      First-Repo-Preactice  MyProject
+Exercises   Icecream    git-practice
+Peters-MacBook-Pro:Ironhack peterkovach$ cd git-practice/
+Peters-MacBook-Pro:git-practice peterkovach$ get init
+-bash: get: command not found
+Peters-MacBook-Pro:git-practice peterkovach$ git init
+Reinitialized existing Git repository in /Users/peterkovach/Documents/Ironhack/git-practice/.git/
+Peters-MacBook-Pro:git-practice peterkovach$ git log
+commit 82f7ebee9d67aa5b4b97db4178e0108607384bfc
+Author: Peter Kovach <pjkovach21@gmail.com>
+Date:   Sun Jan 3 01:01:35 2016 -0500
+
+    this is the second choice
+
+commit 58eca41b496b4ed16f7f41880c637f3161b81c6d
+Author: Peter Kovach <pjkovach21@gmail.com>
+Date:   Sun Jan 3 01:00:11 2016 -0500
+
+    this is the reult of the second choice
+
+commit 1e56891c64e424ce764fa362a12ac30c35391562
+Author: Peter Kovach <pjkovach21@gmail.com>
+Date:   Sun Jan 3 00:53:36 2016 -0500
+
+    output of first choice
+
+commit 8b0f85940e9dea9561af29080da4726d8c80210a
+Author: Peter Kovach <pjkovach21@gmail.com>
+Date:   Sun Jan 3 00:44:49 2016 -0500
+
+    i picked door three
+Peters-MacBook-Pro:git-practice peterkovach$ git checkout -b "new branch"
+fatal: 'new branch' is not a valid branch name.
+Peters-MacBook-Pro:git-practice peterkovach$ git checkout -b new_branch
+Switched to a new branch 'new_branch'
+Peters-MacBook-Pro:git-practice peterkovach$ echo "behind door two is a house" >> second_choice.txt 
+Peters-MacBook-Pro:git-practice peterkovach$ open second_choice.txt 
+Peters-MacBook-Pro:git-practice peterkovach$ git add second_choice.txt 
+Peters-MacBook-Pro:git-practice peterkovach$ git commit second_choice.txt -m "added new output for 2nd choice"
+[new_branch 75b1281] added new output for 2nd choice
+ 1 file changed, 1 insertion(+)
+Peters-MacBook-Pro:git-practice peterkovach$ git merge
+fatal: No remote for the current branch.
+Peters-MacBook-Pro:git-practice peterkovach$ git merge new_branch
+Already up-to-date.
+Peters-MacBook-Pro:git-practice peterkovach$ git mergre master new_branch
+git: 'mergre' is not a git command. See 'git --help'.
+
+Did you mean this?
+  merge
+Peters-MacBook-Pro:git-practice peterkovach$ git merge master new_branch
+Already up-to-date.
+Peters-MacBook-Pro:git-practice peterkovach$ 
+    output of first choice
+Peters-MacBook-Pro:git-practice peterkovach$ git log --oneline
+75b1281 added new output for 2nd choice
+82f7ebe this is the second choice
+58eca41 this is the reult of the second choice
+1e56891 output of first choice
+8b0f859 i picked door three
+b9a6d4f I added a second line so they know to choose a door.
+f78ab98 first commit
+Peters-MacBook-Pro:git-practice peterkovach$ 

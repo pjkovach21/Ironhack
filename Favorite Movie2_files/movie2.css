@@ -1,0 +1,34 @@
+body {
+	padding: 100px;
+  	margin: 1px;
+}
+header {
+	width: 100%;
+	margin: 10px;
+	text-align: center;
+}
+
+footer 	{
+	width: 100%;
+	margin: 10px;
+	text-align: center;
+}
+.box1{
+  padding: 10px;
+  margin: 10px;
+  background-color: green;
+}
+
+.box2{
+  padding: 100px;
+  margin: 100px;
+  width: 100px;
+  background-color: yellow;
+}
+
+.box3{
+  padding: 5px;
+  margin: 5px;
+  background-color: orange;
+  float: down;
+}
