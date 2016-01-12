@@ -1,11 +1,9 @@
 class Post
-	attr_accessor :title, :date, :text
-	def initialize(title, date, text)
+	attr_accessor :title, :date, :text, :sponsered
+	def initialize(title, date, text, sponsered)
 		@title = title
 		@date = date
 		@text = text
-	end
-	def post_it 
-		return " #{@title}\n **********\n #{@text} \n ---------------\n"
+		@sponsered = sponsered
 	end
 end

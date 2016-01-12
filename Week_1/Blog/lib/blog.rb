@@ -12,8 +12,12 @@ class Blog
 			post_1.date <=> post_2.date
 		end
 		puts "here is the new blog"
-		sorted_posts.each do |blog|
-			puts " #{blog.title}\n **********\n #{blog.text} \n ---------------\n"
+			sorted_posts.each do |blog|
+				if blog.sponsered == "Yes"
+				puts "*******#{blog.title}********\n **********\n #{blog.text} \n ---------------\n.colorize(:aqua)"
+			else 
+			puts "#{blog.title}\n **********\n #{blog.text} \n ---------------\n.colorize(:aqua)"	
 		end
 	end
+end
 end
