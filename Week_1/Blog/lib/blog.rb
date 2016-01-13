@@ -1,4 +1,4 @@
-require_relative("post.rb")
+
 
 class Blog 
 	def initialize ()
@@ -14,10 +14,11 @@ class Blog
 		puts "here is the new blog"
 			sorted_posts.each do |blog|
 				if blog.sponsered == "Yes"
-				puts "*******#{blog.title}********\n **********\n #{blog.text} \n ---------------\n.colorize(:aqua)"
-			else 
-			puts "#{blog.title}\n **********\n #{blog.text} \n ---------------\n.colorize(:aqua)"	
+				puts "*******#{blog.title}********\n **********\n #{blog.text} \n ---------------\n".colorize(:aqua)
+				else 
+				puts "#{blog.title}\n **********\n #{blog.text} \n ---------------\n".colorize(:yellow)
+			end
 		end
 	end
 end
-end
+
