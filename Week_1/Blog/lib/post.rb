@@ -7,3 +7,5 @@ class Post
 		@sponsered = sponsered
 	end
 end
+
+
