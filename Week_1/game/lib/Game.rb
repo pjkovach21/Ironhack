@@ -18,6 +18,8 @@ class Game
 		@current_room += 1
 		if @current_room != @rooms.length
 			play
+		else
+			puts "you won the game"
 		end
 	end
 end
