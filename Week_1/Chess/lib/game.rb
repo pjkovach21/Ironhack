@@ -1,3 +1,8 @@
 class Game
-	def initialize
-		game = [0,[],[],[],[],[],[],[],[]]
+	attr_reader :game
+	def initialize (game)
+		@game = game
+	end
+	def move
+		### .push .delete
+end
