@@ -19,4 +19,9 @@ RSpec.describe Lexiconomitron do
 		end
 	end
 
+	describe "three" do
+		it "returns only words less than three" do
+			expect(@lexi.three(["This", "is", "a", "boring","test"])).to eq(["is", "a"])
+		end
+	end
 end
