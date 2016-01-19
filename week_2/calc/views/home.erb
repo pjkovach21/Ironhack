@@ -1,0 +1,38 @@
+<!-- views/home.erb -->
+<!doctype html>
+<html>
+<head>
+  <title>Home | Calculator</title>
+</head>
+<body>
+<h1>Options</h1>
+<h2>Add</h2>
+	<form action="/calculate_add" method="POST">
+		<input type="number" name="first_number" placeholder="1st number"> +
+		<input type="number" name="second_number" placeholder="2nd number">
+
+		<button type="submit">Calculate</button>
+	</form>
+<h2>Subtract</h2>
+	<form action="/calculate_subtract" method="POST">
+		<input type="number" name="first_number" placeholder="1st number"> -
+		<input type="number" name="second_number" placeholder="2nd number">
+
+		<button type="submit">Calculate</button>
+	</form>
+<h2>Multiply</h2>
+	<form action="/calculate_multi" method="POST">
+		<input type="number" name="first_number" placeholder="1st number"> *
+		<input type="number" name="second_number" placeholder="2nd number">
+
+		<button type="submit">Calculate</button>
+	</form>
+<h2>Divide</h2>
+	<form action="/calculate_div" method="POST">
+		<input type="number" name="first_number" placeholder="1st number"> /
+		<input type="number" name="second_number" placeholder="2nd number">
+
+		<button type="submit">Calculate</button>
+	</form>
+</body>
+</html>
