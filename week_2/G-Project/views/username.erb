@@ -1,0 +1,14 @@
+<h1>
+  Profile for:
+  <%= @username %>
+</h1>
+<p>
+  Place of origin:
+  <%= @city %>
+</p>
+<% if @username == "khalifenizar" %>
+  Welcome back, Nizar.
+<% elsif @username == "pete" %>
+  Hey Pete, how's it going?
+<% end %>
+
