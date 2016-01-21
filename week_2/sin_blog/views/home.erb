@@ -1,0 +1,15 @@
+<h1> Welocome to the best blog every</h1>
+<ul>
+<% @post.each_with_index do |post , i| %>
+<li>
+	<a href="/post_details/<%= i %>"><%= post.title %></a>
+</li>
+<% end %>
+
+
+<li>
+<form action"/newpost" method="POST">
+<button type="submit">New Post</button>
+</form>
+</li>
+<ul>

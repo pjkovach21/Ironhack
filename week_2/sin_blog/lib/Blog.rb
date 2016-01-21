@@ -1,9 +1,13 @@
 class Blog
-	attr_accessor :blog_space
+	attr_accessor :post
 	def initialize
-		@blog_space = []
+		@post = []
 	end
 	def add_post(blog)
-		@blog_space.push(blog)
+		@post.push(blog)
+	end
+	def lastest_post
+	 @post.sort {| post1, post2| post2.date <=> post1.date}
+
 	end
 end
