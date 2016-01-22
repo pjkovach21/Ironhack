@@ -7,13 +7,11 @@
 <h2>
 	first 9 results:
 	<% @results.each do |film|%>
+	<% if film.poster == nil %>
 	<%= film.title %>
+	<% else %>
+<img src=" <%= film.poster %> height="80" width="80"">
 
 
-
-<img src=" <%= film.poster %> height="40" width="40"">
-
-<p>
-	Directed by <%= film.director %>
-</p>
+<% end %>
 <% end %>
