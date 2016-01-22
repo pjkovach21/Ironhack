@@ -1,0 +1,19 @@
+<h1> IMDB gem test</h1>
+
+<p>
+	search term <strong> <%= @movie %> </strong> resulted in <%= @number_of_results %> movies
+</p>
+
+<h2>
+	first 9 results:
+	<% @results.each do |film|%>
+	<%= film.title %>
+
+
+
+<img src=" <%= film.poster %> height="40" width="40"">
+
+<p>
+	Directed by <%= film.director %>
+</p>
+<% end %>
