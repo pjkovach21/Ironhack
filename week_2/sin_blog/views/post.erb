@@ -1,6 +1,11 @@
 <h1>Welcome to the post!</h1>
 
-<p><%= @post.title %></p>
-<p><%= @post.date %><p>
+<p>Title <strong><%= @post.title %></strong></p>
+<p>The post was written on <strong><%= @post.date %></strong><p>
+<h2>Read below</h2>
 <p><%= @post.text %></p>
-
+<p>Written by <strong> <%= @post.author %></strong></p>
+<p>We talkin bout <strong><%= @post.category %></strong></p>
+<form action"/" method="POST">
+<button type="submit">I wann go back</button>
+</form>
