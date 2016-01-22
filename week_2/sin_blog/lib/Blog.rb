@@ -10,4 +10,6 @@ class Blog
 	 @post.sort {| post1, post2| post2.date <=> post1.date}
 
 	end
+	def author()
+		@author = [] 
 end

@@ -41,3 +41,7 @@ end
 post "/post_details/:id" do
 	redirect to("/")
 end
+
+get "/author/:name"
+	index = params[:name]
+	

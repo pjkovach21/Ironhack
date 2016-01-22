@@ -13,10 +13,10 @@ RSpec.describe Blog do
 	end
 
 	it "returns number of blogs in array" do
-	expect(@blog.blog_space).to eq([@post1, @post2])
+	expect(@blog.post).to eq([@post1, @post2])
 end
 
 	it "returnds post in latest 1st" do
-	expect(@blog.lastest_post).to eq([@post2, @post1])
+	expect(@blog.post).to eq([@post2, @post1])
 end
 end
