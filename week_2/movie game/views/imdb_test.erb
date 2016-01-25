@@ -1,17 +1,22 @@
 <h1> IMDB gem test</h1>
 
 <p>
-	search term <strong> <%= @movie %> </strong> resulted in <%= @number_of_results %> movies
+	search term <strong> <%= @movie %> </strong> 
 </p>
-
-<h2>
-	first 9 results:
-	<% @results.each do |film|%>
-	<% if film.poster == nil %>
-	<%= film.title %>
-	<% else %>
-<img src=" <%= film.poster %> height="80" width="80"">
+<p> Out of the top nine results,which film was filmed in <%= @win_movie.year %> </p>
 
 
-<% end %>
-<% end %>
+	<% @final_results.each do |film|%>
+		<% if film.year == @win_movie.year %>
+
+			<img src=" <%= film.poster %>" height="220" width="220">
+			<form action="/correctmovie" method="POST">
+			<button type="submit">Hit</button>
+			</form>
+		<% else %>
+			<img src=" <%= film.poster %>" height="220" width="220">
+			<form action="/wrongmovie" method="POST">
+			<button type="submit">Hit</button>
+			</form>
+		<% end %>
+	<% end %>
