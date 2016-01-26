@@ -1,0 +1,45 @@
+#r1 {
+	background-color: white;
+	height: 80px;
+	margin-top: 25px;
+}
+
+#r2 {
+	background-color: black;
+	height: 550px;
+}
+
+#r3 {
+	background-color: #ed564b;
+	height: 314px;
+}
+
+#r4 {
+	background-color: white;
+	height: 1121px;
+}
+
+#r5 {
+	background-color: #3b3b3b;
+	height: 351px;
+	border-top: 5px solid #ed564b;
+}
+
+#r6 {
+	background-color: #292929;
+	height: 78px;
+}
+
+#header_title {
+	font-size: 38px;
+	text-align: center;
+}
+.navi {
+	color: black;
+	margin-top: 15px;
+}
+
+.columns3 {
+	height: 400px;
+	width: 224px;
+}
