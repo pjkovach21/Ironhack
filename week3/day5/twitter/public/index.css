@@ -5,6 +5,10 @@
 	padding-bottom: 10px;
 }
 
+.rnav {
+	padding-right: 10px;
+}
+
 .r1  {
 	background-color: white;
 	padding-top: 20px;
@@ -16,13 +20,13 @@
 
 #coverphoto {
 	width: 100%;
-	height: 320px;
+	height: 60vh;
 	margin-right: 0
 }
 
 .r2 {
 	border-bottom: solid 1px black;
-	height: 320px;
+	height: 60vh;
 	position: relative;
 }
 
@@ -35,6 +39,28 @@
 	width: 200px;
 }
 
-.blocks {
-	display: inline-block;
+.text {
+	display: block;
+}
+
+.digits {
+	display: block;
+}
+
+.r3 {
+	list-style: none;
+	padding-left: 0px;
+	
+}
+
+.r3 ul li {
+	padding-left: 0;
+	padding-right: 15px;
+}
+
+#tweetListNav {
+	display: block;
+	list-style: none;
+	padding-left: 0px;
+
 }
