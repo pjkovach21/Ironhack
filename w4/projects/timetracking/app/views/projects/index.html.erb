@@ -1,0 +1,13 @@
+<ul>
+<% @projects.each do |i| %>
+<% if i.description.present? %>
+<li >
+	<p> <%= i.name %> and People describe me as <%= i.description %></p>
+</l1 >
+<%elsif %>
+<li >
+	<%= i.name %> 
+</l1 >
+<% end %>
+<% end %>
+</ul>
