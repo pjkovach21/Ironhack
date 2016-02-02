@@ -1,0 +1,5 @@
+Contact.create(name:"Pete", address:"Detroit" ,number:"222-222-2222" ,email:"p@email.com")
+Contact.create(name:"S", address:"Miami" ,number:"333-333-3333" ,email:"s@email.com")
+Contact.create(name:"L", address:"Denver" ,number:"44,4-444-4444" ,email:"l@email.com")
+Contact.create(name:"X", address:"New York" ,number:"555-555-5555" ,email:"x@email.com")
+Contact.create(name:"T", address:"New Orleans" ,number:"666-6666-6666" ,email:"t@email.com")
