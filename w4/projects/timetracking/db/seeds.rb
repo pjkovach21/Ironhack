@@ -20,5 +20,8 @@ p = Project.create  name: " Project#{i}", description: "Project#{i}"
 	else
 		p.entries.create(minutes: i, hours: i)
 	end
+		#p.entries.create(minutes: 10 * i, hours: 1 * i)
+		#p.entries.create(minutes: 10 * i, hours: 1 * i)
+		#should allow for multiple things to be put into an entry
 end
 

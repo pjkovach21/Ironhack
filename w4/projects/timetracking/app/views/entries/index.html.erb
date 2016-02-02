@@ -1,0 +1,10 @@
+<h1>Entries#index</h1>
+<p>Find me in app/views/entries/index.html.erb</p>
+
+<%= @project.entries  %>
+<ul>
+<% @project.entries.each do |entry| %>
+	<li> <p> Hour:<%= entry.hours %>   minutes:<%= entry.minutes %>  </li>
+	<% end %>
+</ul>
+
