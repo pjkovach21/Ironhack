@@ -1,6 +1,6 @@
 class ContactsController < ApplicationController
 	def index
-		@contacts = Contact.limit(20)
+		@contacts = Contact.limit(20).order("name asc")
 		render "index"
 	end
 	def new
