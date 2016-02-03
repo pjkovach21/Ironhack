@@ -1,10 +1,18 @@
 Rails.application.routes.draw do
 
+#
   get "/" => "site#home"
-  get "/ContactPage" => "site#ContactPage"
-  get "/projects" => "projects#index"
-  get "/projects/:id" => 'projects#show'
-  get "projects/:project_id/entries" => "entries#index"
+ # get "/ContactPage" => "site#ContactPage"
+  #get "/projects" => "projects#index"
+  #get "/projects/:id" => 'projects#show'
+  #get "projects/:project_id/entries" => "entries#index"
+  #get "projects/:project_id/entries/new" => "entries#new" , as: :project_entries
+  #post "/project/:project_id.entries" => "entries#create"
+#
+# =>                      except (not use it)
+  resources( :projects, only: [:show, :new, :create, :index] )do
+    resources :entries, only: [:index, :new, :create, :edit, :update]
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

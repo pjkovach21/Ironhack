@@ -3,6 +3,7 @@
 <% if i.description.present? %>
 <li >
 	<p> <%= i.name %> and People describe me as <%= i.description %></p>
+	<%= link_to(i.name, projects_path) %>
 </l1 >
 <%elsif %>
 <li >
