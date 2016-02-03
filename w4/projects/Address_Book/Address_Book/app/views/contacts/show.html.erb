@@ -5,7 +5,11 @@
 <li> <%= @user.email %> </li>
 <li> <%= @user.address %> </li>
 </ul> 
-  
+ 
+ <form action="/fav" method="POST">
+ <button type="Submit" name="fav" value= "<%= @user.id %>">fav</button>
+     <input type="hidden" name="authenticity_token"
+      value="<%= form_authenticity_token %>">
+</form>
 
-
-
+<iframe src="http://www.staggeringbeauty.com/" style="border: 1px inset #ddd" width="498" height="598"></iframe>
