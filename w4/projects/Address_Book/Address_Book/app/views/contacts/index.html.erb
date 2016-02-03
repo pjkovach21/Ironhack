@@ -5,3 +5,10 @@
 	<li> <p> Name: <a href="/contacts/<%=i.id%>"><%=i.name%> </a> </p> </li>
 <% end %>
 </ul>
+
+<form action="/search" method="POST">
+	<input type="text" name="search" placeholder="search a starting letter">
+	<button type="submit">Hit it</button>
+	<input type="hidden" name="authenticity_token"
+      value="<%= form_authenticity_token %>">
+</form>

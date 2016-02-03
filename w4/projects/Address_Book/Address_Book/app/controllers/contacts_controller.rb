@@ -39,4 +39,8 @@ class ContactsController < ApplicationController
 	def list_fav
 		@contacts = Contact.where(fav:  "yes")
 	end
+	def search
+		@contacts = Contact.where("name LIKE ?", "%#{params[:search]}%" )
+		render("index")
+	end
 end
