@@ -5,6 +5,7 @@
 <ul>
 <% @project.entries.each do |entry| %>
 	<li> <p> Hour:<%= entry.hours %>   minutes:<%= entry.minutes %>  </li>
+	<%= link_to("Edit", edit_project_entry_path(@project, entry)) %>
 	<% end %>
 </ul>
 
