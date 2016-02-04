@@ -4,6 +4,6 @@ user.save
 
 
 
-user.products.create(title: " Product: 1", email: " descrition: blah", deadline: DateTime.now)
-user.products.create(title: " Product: 2", email: " descrition: blah blah", deadline: DateTime.now)
-user.products.create(title: " Product: 3", email: " descrition: blah blah BLah", deadline: DateTime.now)
+user.products.create(title: " Product: 1",  description: "blah", deadline: DateTime.now)
+user.products.create(title: " Product: 2",  description: "blah blah", deadline: DateTime.now)
+user.products.create(title: " Product: 3",  description: "blah blah BLah", deadline: DateTime.now)
