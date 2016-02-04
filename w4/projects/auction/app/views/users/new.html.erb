@@ -1,0 +1,16 @@
+<h1>Make a new User</h1>
+<p>Here you can join to be apart of our aweful community</p>
+
+<%= form_for [@user] do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name %>
+<br>
+<%= f.label :email %>
+<%= f.text_area :email %>
+<br>
+<%= f.submit 'Join' %>
+<% end %>
+
+
+<!-- // put on home page to add new user -->
+<%#= link_to"new_user", new_user_path() %>

@@ -1,0 +1,7 @@
+<h1> List of New Products</h1>
+
+<ul>
+<%= @products.each do |p| %>
+	<li> title: <%= p.title %>\\\ description: <%= p.description %>\\\ deadline <%= p.deadline %>\\\</li>
+<% end %>
+</ul>

@@ -1,0 +1,17 @@
+<h1>Make a new Product</h1>
+<p>Here you can add a product to be submitted for auction</p>
+
+<%= form_for [@user, @product] do |p| %>
+<%= p.label :title %>
+<%= p.text_area :title %>
+<br>
+<%= p.label :description %>
+<%= p.text_area :description %>
+<br>
+<%= p.label :deadline %>
+<%= p.text_area :deadline %>
+<br>
+<%= p.submit 'Add to Market' %>
+<% end %>
+
+
