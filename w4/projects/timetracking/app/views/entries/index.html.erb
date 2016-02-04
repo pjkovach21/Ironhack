@@ -1,13 +1,18 @@
+#can create a headder for all pages by creating a shared file in views and then rendering it there and it will be a header for all pages- check day4 notes rails partial towards the end and also leo's notes on github
+
+
 <h1>Entries#index</h1>
 <p>Find me in app/views/entries/index.html.erb</p>
-
+<h3><%= flash_message  %><h3>
 <%= @project.entries  %>
 <ul>
 <% @project.entries.each do |entry| %>
 	<li> <p> Hour:<%= entry.hours %>   minutes:<%= entry.minutes %>  </li>
 	<%= link_to("Edit", edit_project_entry_path(@project, entry)) %>
+	<%= link_to("Delete", project_entry_path(@project, entry), method: :delete, data: {confirm: "You really want to delete this?"}) %>
 	<% end %>
 </ul>
 
 <%= link_to("Projects", projects_path) %>
 <%= link_to("New Entry", new_project_entry_path(@project)) %>
+

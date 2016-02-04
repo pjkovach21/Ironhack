@@ -6,8 +6,7 @@ class UsersController < ApplicationController
 
 	def create
 		#dont know if correct
-		@users = User.find(id: params[:user])
-		@user = users.user.new(params[:name])
+		@user = User.new(params[:name])
 		if @user.save
 			redirect_to action: 'index', controller: 'products'
 		else
