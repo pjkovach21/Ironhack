@@ -2,8 +2,11 @@
 
 <ul>
 <% @products.each do |p| %>
-	<li> title: <%= p.title %>\\\ 
+	<li> title: <%= p.title %>\\\
+
 	description: <%= p.description %>\\\
-	deadline <%= p.deadline %>\\\</li>
+	deadline <%= p.deadline %>\\\
+	//// <%=link_to("Bid",  product_path(p.id)) %>
+	</li>
 <% end %>
 </ul>
