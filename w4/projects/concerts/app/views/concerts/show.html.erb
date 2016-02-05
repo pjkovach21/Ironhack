@@ -1,4 +1,4 @@
-<h2> @concert.artist</h2>
+<h2> <%=@concert.artist %></h2>
 <ul>
 	<li><%= @concert.venue %></li> 
 	<li><%= @concert.city%></li> 
@@ -6,3 +6,22 @@
 	<li><%= @concert.price %> </li> 
 </ul>
 
+<h3> Comments</h3>
+<h4>Make a comment </h4>
+<%= form_for [@concert, @comment] do |c| %>
+	<%= c.label :text %>
+	<%= c.text_field :text %>
+	<br>
+	<%= c.submit "submit" %>
+<% end %>
+
+
+
+<h4> COmment list <h4>
+<ul>
+	<% @comments.each do |c| %>
+			<li>
+				comment: <%= c.text %>
+			</li>
+	<% end%>
+</ul>

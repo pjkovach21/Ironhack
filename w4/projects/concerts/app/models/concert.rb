@@ -9,7 +9,7 @@ class Concert < ActiveRecord::Base
 		presence: true,
 		numericality: true
 
-
+	has_many :comments
 
 	def self.concerts_today()
 		beginning_of_day = DateTime.now.beginning_of_day

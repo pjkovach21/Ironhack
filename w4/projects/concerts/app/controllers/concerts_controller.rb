@@ -16,6 +16,8 @@ class ConcertsController < ApplicationController
 	end
 	def show
 		@concert = Concert.find_by(id: params[:id])
+		@comment = @concert.comments.new
+		@comments = @concert.comments.all
 	end
 
 	private
