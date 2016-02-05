@@ -1,0 +1,19 @@
+<h2> Welcome to our list of concerts </h2>
+<h3>COncerts of today</h3>
+<ul>
+	<% @concerts.each do |c| %>
+			<li>
+				a: <%= c.artist %>
+				<%= link_to("details", concert_path(c.id)) %>
+			</li>
+	<% end%>
+</ul>
+<h3>COncerts of Month</h3>
+<ul>
+	<% @concertsmonth.each do |c| %>
+			<li>
+				a: <%= c.artist %>
+				<%= link_to("details", concert_path(c.id)) %>
+			</li>
+	<% end%>
+</ul>
