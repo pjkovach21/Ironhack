@@ -1,0 +1,9 @@
+<h2> List of prices under <%= @price %>... because you are cheap</h2>
+
+<ul>
+	<% @concerts.each do |concert| %>
+		<li>
+		<%= link_to("#{concert.artist} at #{concert.venue} in #{concert.city}", concert_path(concert)) %>
+		</li>
+	<% end %>
+</ul>

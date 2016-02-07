@@ -1,0 +1,10 @@
+<h2>Search by Price</h2>
+<form action="/concerts/results" method="POST" >
+	<label> Search your Price </label>
+	<input type="integer" name="price">
+
+	<input type="hidden" name="authenticity_token"
+    value="<%= form_authenticity_token %>">
+
+    <button type="submit">Search</button>
+</form>

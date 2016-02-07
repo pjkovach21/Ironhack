@@ -1,0 +1,9 @@
+<h2> Most popular concert</h2>
+
+<ul>
+	<% @s.each do |concert| %>
+	<li>
+		<%= concert.artist %>
+	</li>
+	<% end %>
+</ul>

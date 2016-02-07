@@ -19,6 +19,22 @@ class ConcertsController < ApplicationController
 		@comment = @concert.comments.new
 		@comments = @concert.comments.all
 	end
+	def search
+
+	end
+
+	def results
+		@price = params[:price]
+		@concerts = Concert.where("price <= ?" , @price)
+	end
+
+	def popular
+		@concert = Concert.all
+
+		@s = @concert.sort_by do |c|
+			-c.comments.size
+		end
+	end
 
 	private
 	def concert_params

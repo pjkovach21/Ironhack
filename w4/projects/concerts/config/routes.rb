@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   get "/" => "site#home"
+  get "/concerts/search" => "concerts#search"
+  post "/concerts/results" => "concerts#results"
+  get "/concerts/popular" => "concerts#popular"
   resources :concerts do
     resources :comments
   end
