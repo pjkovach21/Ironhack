@@ -25,10 +25,6 @@ $.ajax ({
 }
 	
 function displaySong (artist){
-	var art_with_image = []
-	artist.forEach(artimage)
-		if artimage.images.legth > 0 
-			artimage.push
 	artist.forEach(function (art){
 		console.log(art)
 		var html = `
