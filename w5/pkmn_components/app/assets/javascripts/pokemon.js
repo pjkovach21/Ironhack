@@ -8,6 +8,11 @@ $(document).on("ready", function (){
 		var pokemon = new PokemonApp.Pokemon(pokemonUri);
 		pokemon.render();
 	});
+	// add evolution button
+	// get from nizar on git hub
+	// $(".js-evolve").on("click", function){
+
+	//  }
 });
 
 
