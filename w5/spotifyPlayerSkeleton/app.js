@@ -9,6 +9,7 @@ $(document).on("ready", function (){
 		event.preventDefault();
 		playSong();
 	});
+	$('.js-player').on('timeupdate', printTime);
 });
 
 function fetchSong(){
@@ -41,7 +42,12 @@ function playSong(){
 		$('.js-player').trigger('play');
 		$(".js-button-play").addClass("playing");
 	}
+}
 
+function printTime () {
+  var current = $('.js-player').prop('currentTime');
+  $(".js-seekbar").val(current);
+  console.debug('Current time: ' + current);
 }
 
 // function displaySonginfo(song) {
