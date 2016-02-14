@@ -10,12 +10,12 @@ function fetchArtist(){
 var seacrhArtist = $(".js-artist-spotify").val();
 console.log(seacrhArtist)
 $.ajax ({
-    url: `https://api.spotify.com/v1/search?type=artist&query=${seacrhArtist}`,
+    url: (`https://api.spotify.com/v1/search?type=artist&query=${seacrhArtist}`,)
   	
     success: function (response) {
       console.log(response);
       alert("That artist is da bombbb.com");
-      displaySong(response.artists.items)
+    
     },
     
     error: function () {
