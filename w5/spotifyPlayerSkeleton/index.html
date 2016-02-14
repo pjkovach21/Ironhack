@@ -2,7 +2,9 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<script src="jquery-2.2.0.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	<script src="app.js"></script>
 </head>
 <body>
@@ -15,7 +17,7 @@
 
 		<div class="metadata">
 		  <p class="js-title">Hunger of The Pine</p>
-		  <p class="js-author">alt-J</p>
+		  <button class="js-author" data-id="">alt-J</button>
 
 		  <div class="seekbar">
 		    <progress class="js-seekbar" value="0" max="30"></progress>
@@ -27,17 +29,32 @@
 		</div>
 
 		<audio class="js-audio js-player" src="https://p.scdn.co/mp3-preview/8e9c5ffdc38e91659bfe8b6bd44650dfc25a3d31"></audio>
+
 	</div>
 	<div>
 			<input type="text" class="js-search" >
 			<button class="js-searchButton">spotify search</button>
-		<div>
-<!-- 			<h2> Track info</h2>
-				<ul class="js-track-info">
-			
-				</ul> -->
-		</div>
 	</div>
+
+<!-- addding a modal -->
+	<div class="modal fade js-modal">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+
+	      <div class="modal-header">
+	        <h2 class="js-artist-name"></h2>
+	        <img class="js-artist-img img-responsive" src="">
+	      </div>
+
+	      <div class="modal-body">
+	        <p class="js-artist-followers"></p>
+	        <p class="js-artist-popularity"></p>
+	      </div>
+
+	    </div>
+	  </div>
+	</div>
+	<!-- End Artist Modal -->
 
 
 </body>
