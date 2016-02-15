@@ -1,13 +1,13 @@
 class Sandwhich < ActiveRecord::Base
 	has_many :sandwich_ingredients
-	has_many :ingredients, through: :sandwich_ingredients, after_add: :totalcalories
+	has_many :ingredients, through: :sandwich_ingredients, after_add: :totalcal
 
-	# def totalcalories
-	# 	self.totalcalories
-	# 	self.ingredients.calories.each do |cal|
-	# 		self.totalcalories += cal
-	# 	end
-	# end
+	private
+	def totalcal(ingredients)
+		self.totalcalories+=ingredients.calories
+		self.save
+
+	end
 end
 
 

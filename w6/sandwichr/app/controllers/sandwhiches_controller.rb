@@ -16,6 +16,7 @@ class SandwhichesController < ApplicationController
 			status: 404
 			return
 		end
+
 		render json: sandwhich.to_json({:include => :ingredients})
 	end
 
