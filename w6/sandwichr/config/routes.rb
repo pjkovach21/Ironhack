@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   resources :ingredients, except: [:new, :edit]
   resources :sandwhiches, except: [:new, :edit]
+
+  post "/sandwiches/:id/ingredients/add/:iid" => "sandwhiches#add_ingredient"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -16,7 +16,7 @@ class SandwhichesController < ApplicationController
 			status: 404
 			return
 		end
-		render json: sandwhich
+		render json: sandwhich.to_json({:include => :ingredients})
 	end
 
 	def update
@@ -41,6 +41,23 @@ class SandwhichesController < ApplicationController
 		render json: sandwhich
 	end
 
+	def add_ingredient
+		sandwhich = Sandwhich.find_by(:id => params[:id])
+		ingredient = Ingredient.find_by(:id => params[:iid])
+		sandwhich.ingredients.push(ingredient)
+		# daingredients = sandwhich.ingredients.all
+		render json: sandwhich.to_json({include: :ingredients})
+	end
+
+	# def details
+	# 	sandwhich = Sandwhich.ingredients.find_by(id: params[:id])
+	# 	unless sandwhich
+	# 		render json: {error: "sandwhich not found"},
+	# 		status: 404
+	# 		return
+	# 	end
+	# 	render json: sandwhich
+	# end
 	private
 	def sandwhich_params
 			params.require(:sandwhich)
