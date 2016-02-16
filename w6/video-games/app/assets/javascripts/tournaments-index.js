@@ -1,6 +1,3 @@
-// $('.ctrl-tournaments.actn-index').on('click', '[data-hook~=tourney-delete]', deleteTournament )
-
-
   function tournamentsIndex () {
   var request = $.get('/api/tournaments.json')
   request.fail(showError)
@@ -29,8 +26,19 @@
   }
 
 }
-  // function deleteTournment () {
-  //   $.ajax({
-  //     url:
-  //   }),
-  // }
+   function deleteTournament (event) {
+    event.preventDefault()
+    tournamentId = $(this).prop("value")
+    var $button = $(this)
+   var request = $.ajax({
+      url: '/api/tournaments',
+      type: 'DELETE',
+      data: {id: tournamentId},
+      success: function (response){
+        $button.parent().remove();
+      },
+      error: function (){
+        alert("shit didnt work")
+      }
+    });
+  }

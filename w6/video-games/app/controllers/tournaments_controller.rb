@@ -13,15 +13,15 @@ class TournamentsController < ApplicationController
 		render json: tournament, status: 201
  	end	
 
- 	# def destroy
- 	# 	tournament = Tournament.find_by(id: params[:id])
- 	# 	unless tournament
- 	# 		render json: {error: "Tourny does not already exisit"}, status: 404
- 	# 		return
- 	# 	end
- 	# 	tournament.destroy
- 	# 	render json: tournament
- 	# end
+ 	def destroy
+ 		tournament = Tournament.find_by(id: params[:id])
+ 		unless tournament
+ 			render json: {error: "Tourny does not already exisit"}, status: 404
+ 			return
+ 		end
+ 		tournament.destroy
+ 		render json: tournament
+ 	end
 
  	private
  	def tourny_params

@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   # post '/' => 'tournaments#index'
   get "/api/tournaments" => "tournaments#apiIndex" 
   post "/api/tournaments" => "tournaments#create"
-  # delete "/api/tournaments/:id" => "tournaments#delete" 
+  delete "/api/tournaments/" => "tournaments#destroy" 
 
 
   # The priority is based upon order of creation: first created -> highest priority.
