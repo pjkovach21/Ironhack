@@ -1,0 +1,24 @@
+<h1> The ingredients</h1>
+<div class="js-sandwhich-details" data-sid="<%=@sandwhich.id%>">
+<h2> The name of the sub:  <%= @sandwhich.name %> <h2>
+		<h2  > Total Cals: <%= @sandwhich.totalcalories %> <h2>
+		<h2> Bread Type: <%= @sandwhich.bread_type %> <h2>
+		<p> The Ingredients:</p>
+		<ul class="js-add-ing">	
+		<% @sandwhich.ingredients.each do |ing| %>
+			<li>
+				<p> ingredient: <%= ing.name %> <p>
+				
+				<p> cal intake: <%= ing.calories %> <p>
+				<br>
+			</li>
+			<% end %>
+		</ul>
+</div>
+<h3> Add Ingredients</h3>
+
+<% @ingredients.each do |ing| %>
+	<button class="js-btn-ing" data-id="<%=ing.id%>"><%=ing.name%></button>
+	<% end %>
+
+

@@ -32,6 +32,7 @@
     // saving button
     var $button = $(this)
    var request = $.ajax({
+    //  explain type and data
       url: '/api/tournaments',
       type: 'DELETE',
       data: {id: tournamentId},

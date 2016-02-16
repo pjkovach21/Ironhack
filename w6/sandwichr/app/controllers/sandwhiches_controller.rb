@@ -43,6 +43,7 @@ class SandwhichesController < ApplicationController
 	end
 
 	def add_ingredient
+		puts " gfghhgjhghghjgjhgjhgjhgjhgjhgjhghjghjghjghjghjghjgjhgjhghjghjghjghj"
 		sandwhich = Sandwhich.find_by(:id => params[:id])
 		ingredient = Ingredient.find_by(:id => params[:iid])
 		sandwhich.ingredients.push(ingredient)

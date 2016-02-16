@@ -1,0 +1,10 @@
+<h1>List of your sandwhiches</h1>
+
+<ul>
+<% @sandwhiches.each do |sand| %>
+	<li>
+		<%= sand.name %>
+		<%= link_to "The Deets", sandwhich_path(sand.id)%>
+	</li>
+<% end %>
+</ul>
