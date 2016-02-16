@@ -29,12 +29,14 @@
    function deleteTournament (event) {
     event.preventDefault()
     tournamentId = $(this).prop("value")
+    // saving button
     var $button = $(this)
    var request = $.ajax({
       url: '/api/tournaments',
       type: 'DELETE',
       data: {id: tournamentId},
       success: function (response){
+        // deleting button
         $button.parent().remove();
       },
       error: function (){
