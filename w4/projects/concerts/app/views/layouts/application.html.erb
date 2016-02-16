@@ -8,8 +8,13 @@
 </head>
 <body>
 <h1>The Concert App</h1>
-
-
+<% unless current_user.nil? %>
+<%= link_to "My profile", "/" %><br>
+<%= link_to "log outs", "/users/sign_out", :method => :delete %>
+<% else %>
+<%= link_to "login", "/users/sign_in" %><br>
+<%= link_to "signup", "/users/sign_up" %>
+<% end %>
 <%= yield %>
 
 <footer> This is da footer</footer>

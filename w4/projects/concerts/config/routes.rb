@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   get "/" => "site#home"
   get "/concerts/search" => "concerts#search"
   post "/concerts/results" => "concerts#results"
