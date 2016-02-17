@@ -17,8 +17,9 @@ function addIngredient (sand_id, ing_id) {
 		url:`/api/sandwhiches/${sand_id}/ingredients/add`,
 		data:{iid: ing_id},
 		success: function(response){
-			console.log(response.ingredients[response.ingredients.length-1])
-			$(".js-add-ing").append(`<li>response.ingredients[-1].name}</li>`)
+			var ingredient_number = response.ingredients.length-1
+			console.log(response.ingredients)
+			$(".js-add-ing").append(`<li>ingredient: ${response.ingredients[ingredient_number].name}<br>cal intake: ${response.ingredients[ingredient_number].calories}</li>`)
 			alert("ingredient was added")
 		},
 		error: function(){
