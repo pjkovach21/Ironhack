@@ -25,6 +25,4 @@ class BarbecuesController < ApplicationController
     end
   end
 
-  private
-
 end

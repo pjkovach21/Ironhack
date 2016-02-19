@@ -10,11 +10,15 @@
 <body data-hook="controller-<%= controller_name %> action-<%= action_name %>">
 
   <div class="container">
+
+   Welcome <%= current_user.name %> ! 
   	<a href="/users/sign_out" data-method="delete">
-		Log Out
+		Please Dont Go
 	</a>
-    <%= yield %>
+	    <%= yield %>
   </div>
 
 </body>
 </html>
+
+<!-- only for bbg pages -->
