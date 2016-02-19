@@ -1,0 +1,22 @@
+<h2>Welcome to BBQPLANNER.co</h2>
+
+
+<!-- controls what user can see based on if logged in -->
+<% unless current_user.nil? %>
+	<a href="/barbecues">
+		See BBQS
+	</a>
+
+	<a href="/users/sign_out" data-method="delete">
+		Log Out
+	</a>
+	<% else %>
+
+	<a href="/users/sign_in">
+		Log in
+	</a>
+
+	<a href="/users/sign_up">
+		Sign Up Son
+	</a>
+<% end %>
