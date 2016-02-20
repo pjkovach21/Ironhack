@@ -5,7 +5,8 @@ Rails.application.routes.draw do
   resources :barbecues 
 
   scope "/api" do
-    resources :barbecues, only: [ :index, :show, :new, :create ], controller: "barbequeapi"
+    resources :barbecues, only: [ :index, :show, :new, :create ], controller: "barbequeapi" #the api connect
+    post "/barbecues/:id/join" => "barbequeapi#join_bbq"
   end
 end
-# end, controller: "barbecueapi"
+# the weird api connect 
